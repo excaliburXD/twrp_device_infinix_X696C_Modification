@@ -16,7 +16,10 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/infinix/x695c
+LOCAL_PATH := device/infinix/radiant
+
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -60,7 +63,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     libhealthd.$(PRODUCT_PLATFORM)
 
-
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-mtkimpl.recovery \
@@ -81,11 +83,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-
 PRODUCT_PACKAGES += \
     otapreopt_script \
     cppreopts.sh \
     update_engine \
     update_verifier \
     update_engine_sideload
-
