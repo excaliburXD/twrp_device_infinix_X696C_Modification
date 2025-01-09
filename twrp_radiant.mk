@@ -18,21 +18,21 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Inherit from x695c device
-$(call inherit-product, device/infinix/x695c/device.mk)
+# Inherit from radiant device
+$(call inherit-product, device/infinix/radiant/device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := x695c
-PRODUCT_NAME := twrp_x695c
+PRODUCT_DEVICE := radiant
+PRODUCT_NAME := twrp_radiant
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Note 10 Pro
-PRODUCT_MANUFACTURER := Infinix
+PRODUCT_MODEL := Note 10 Pro (Radiant)
+PRODUCT_MANUFACTURER := INFINIX MOBILITY LIMITED
 PRODUCT_RELEASE_NAME := Infinix Note 10 Pro
