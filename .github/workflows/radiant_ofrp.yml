@@ -14,7 +14,7 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/excaliburXD/twrp_device_infinix_X695C_Modification.git'
+        default: 'https://github.com/excaliburXD/twrp_device_infinix_X696C_Modification.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
